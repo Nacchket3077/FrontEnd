@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Add{
+            background-color: lightgreen;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 10px;
+            margin: 10px;}
+        .wish{
+            background-color: lightgrey;
+            text-transform: uppercase;
+            border: 3px solid black;
+            padding: 8px 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="Add" onclick=" cartquantity++;
+    document.querySelector('#cart_quantity').innerText=`Your Cart has ${cartquantity} items`;">Add to bag</button>
+    <button class="wish" onclick="cartquantity--;
+    document.querySelector('#cart_quantity').innerText = `Your Cart has ${cartquantity} items`;">Move to WishList</button>
+    <button class="Add" onclick="cartquantity += 2;
+    document.querySelector('#cart_quantity').innerText = `Your Cart has ${cartquantity} items`;">Add 1+1 sale item</button>
+
+    <h1 id="cart_quantity"></h1>
+    <script>
+        let cartquantity = 0;
+        document.querySelector('#cart_quantity').innerText = `Your Cart has ${cartquantity} items`;
+
+    </script>
+</body>
+</html>

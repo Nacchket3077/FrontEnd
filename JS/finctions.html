@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkOddEven(num){
+            if(num%2==0){
+                return "Even";
+            } else {
+                return "Odd";
+            }
+        }
+        console.log(checkOddEven(10)); 
+
+        function checkLarge(num1, num2){
+            if(num1 > num2){
+                return "First number is larger";
+            } else if(num1 < num2){
+                return "Second number is larger";
+            } else {
+                return "Both numbers are equal";
+            }
+        }
+        console.log(checkLarge(10, 20));
+
+        function convertToFahrenheit(celsius){
+            return (celsius * 9/5) + 32;
+        }
+        console.log(convertToFahrenheit(37)); 
+    </script>
+</body>
+</html>

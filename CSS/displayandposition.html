@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        header{
+            background-color: lightblue;
+            padding: 10px;
+            text-align: right;
+            
+        }
+        #div1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 5px solid black;
+            text-align: center;
+            border-radius: 50px;
+        }
+        .box{
+            box-sizing: content-box;
+            width: 100px;
+            background-color: pink;
+            margin: 5px;
+            display: inline-block;
+        }
+        #box1{
+            position: fixed;
+            right: 10px;
+        }
+        #box3{
+            z-index: 2;
+            position: absolute;
+            left: 20px;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            border-top: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="div1">
+            div 1
+        </div>
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+</body>
+</html>
